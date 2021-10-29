@@ -22,12 +22,12 @@ except:
     
    
    
-#another method by addid 40 weeks to LMP
+#another method by adding 40 weeks to LMP
 # delta5 = timedelta(weeks = 40)
 # date5 = date1 + delta5
 # print(date5)
 
-#using naegl;e's rules are
+#using Naegle's rules are
 # delta1 = timedelta(days = 7, weeks = -13)
 # date2 = date + delta1       #adding 7 to days and subtracting 3 months i.e 13 weeks
 # delta2 = timedelta(weeks = 52)
