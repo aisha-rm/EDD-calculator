@@ -1,5 +1,5 @@
 """
-Implement the left side widget for EDD calculation app
+Implement the left side widget for EDD calculation app. This builds on framework.py
 """
 import tkinter as tk
 from tkinter import ttk
@@ -23,17 +23,17 @@ class edd_calc():
         self.pic_label = self.create_pic()
         
     def create_frames(self):
-        pic_frame = tk.Frame(self.window, bg='pink')
+        pic_frame = tk.Frame(self.window, bg='pink')  #removed dimension of frame as the widget in this frame will now dictate the size
         pic_frame.grid(row=1, column=1)
         
         calc_frame = tk.Frame(self.window, bg='purple', width=500)
-        calc_frame.grid(row=1, column=2, sticky=tk.E + tk.W + tk.N + tk.S)
+        calc_frame.grid(row=1, column=2, sticky=tk.E + tk.W + tk.N + tk.S)   #added sticky to stretch out this frame to meet the height of the left 
         
         return pic_frame, calc_frame
     
     def create_pic(self):
         pic_label = tk.Label(self.pic_frame, image = self.pic_photo)
-        pic_label.grid(row=1, column=1)
+        pic_label.grid(row=1, column=1)   #specifying location using grid layout
         return pic_label
  
 if __name__ == '__main__':
