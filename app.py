@@ -72,6 +72,7 @@ class edd_calc():
     def calculate_EDD(self):
                 
         user_text = self.text_box.get()    #get entry from the text box
+        #print(user_text)
         
         try:
             lmp = user_text
@@ -84,11 +85,11 @@ class edd_calc():
             edd_date = lmp_date + delta    #adding 280 days which is the duration of pregnancy
             dates = str(edd_date).split("-")    #converting from datetime to string, then splitting to return date in the order dd-mm-yyyy
             result = f"Congratulations! Your expected date of delivery is {dates[2]}-{dates[1]}-{dates[0]}."
-            print(result)
+            #print(result)
             
         except:
             result = "Error! Please enter a valid date in the specified format."
-            print(result)
+            #print(result)
             
         messagebox.showinfo("Result", result)
     
