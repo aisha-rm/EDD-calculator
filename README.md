@@ -6,4 +6,4 @@ The program computes the expected date of delivery of a user when they enter the
 
 Full program runs on app.py
 
-I wrote about the process in this post. Check it out.  
+I made a blog post about the process. Check it out here https://themedtechie.com/2021/12/21/building-gui-with-tkinter/.  
