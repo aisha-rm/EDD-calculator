@@ -1,5 +1,6 @@
 """
-Implement the widgets on the right frame for EDD calculation app. This builds on left_widget.py
+Implement the widgets on the right frame for EDD calculation app. 
+This builds on left_widget.py
 """
 import tkinter as tk
 from tkinter import ttk
