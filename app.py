@@ -91,7 +91,7 @@ class edd_calc():
             result = "Error! Please enter a valid date in the specified format."
             #print(result)
             
-        messagebox.showinfo("Result", result)
+        return messagebox.showinfo("Result", result)
     
         
  
